@@ -9,7 +9,7 @@ $pizzaStore = new PizzaStore(new SimplePizzaFactory());
 $pizzaStore->orderPizza("チーズ");
 
 $pizzaStore = new PizzaStore(new SimplePizzaFactory());
-$pizzaStore->orderPizza("ペパロニ");
+$pizzaStore->orderPizza("ギリシャ");
 
 $pizzaStore = new PizzaStore(new SimplePizzaFactory());
 $pizzaStore->orderPizza("クラム");
