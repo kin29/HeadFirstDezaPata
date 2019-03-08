@@ -1,0 +1,16 @@
+{
+    "name": "Head First DezaPata",
+    "description": "learn DesignPattern",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "kin29",
+            "email": "kin29.com@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "HFD\\": "src/"
+        }
+    }
+}
