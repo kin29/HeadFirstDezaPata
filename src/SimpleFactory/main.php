@@ -8,10 +8,8 @@ use HFD\SimpleFactory\SimplePizzaFactory;
 $pizzaStore = new PizzaStore(new SimplePizzaFactory());
 $pizzaStore->orderPizza("チーズ");
 
-
 $pizzaStore = new PizzaStore(new SimplePizzaFactory());
 $pizzaStore->orderPizza("ペパロニ");
-
 
 $pizzaStore = new PizzaStore(new SimplePizzaFactory());
 $pizzaStore->orderPizza("クラム");
