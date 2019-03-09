@@ -17,7 +17,7 @@ class PizzaStore
      */
     public $factory;
 
-    function __construct(SimplePizzaFactory $factory)
+    public function __construct(SimplePizzaFactory $factory)
     {
         $this->factory = $factory;
     }
@@ -30,7 +30,7 @@ class PizzaStore
      * @param string $type
      * @return object $pizza
      */
-    function orderPizza(string $type): object
+    public function orderPizza(string $type): object
     {
         $pizza = $this->factory->createPizza($type);
         $pizza->prepare();
@@ -39,5 +39,10 @@ class PizzaStore
         $pizza->box();
 
         return $pizza;
+    }
+
+    public function delivery(): void
+    {
+        echo "配達します\n";
     }
 }

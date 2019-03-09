@@ -21,7 +21,7 @@ class SimplePizzaFactory
      * @param string $type
      * @return object $pizza
      */
-    function createPizza(string $type): object
+    public function createPizza(string $type): object
     {
         //変化する部分（オブジェクト作成）
         $pizza = null;
