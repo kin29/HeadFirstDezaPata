@@ -31,4 +31,9 @@ class ChicagoPepperoniPizza extends Pizza
         $this->sauce = "なんちゃらソース";
         $this->toppings = ['サラミ'];
     }
+
+    public function cut(): void
+    {
+        echo "{$this->name}を四角形にカットします\n";
+    }
 }
