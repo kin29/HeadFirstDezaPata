@@ -29,7 +29,14 @@ createCheeseメソッドを具体的に実装し、
 
 
 ## PizzaStore/ [Client]  
+AbstractFactoryのクライアント。  
+`$nystore->orderPizza('チーズ')`  
+とするだけで、pizzaクラスを介して  
+ピザ工場に生地、ソース、チーズといった食材(製品)を作成してもらい、
+それを調理し、チーズピザが帰ってくる。  
+
 
 ## Pizza/ [Client]  
+ピザ工場に食材の作成を頼んでいる。
 
 ![class_uml](../../img/AbstractFactory_sub.png)
