@@ -22,7 +22,7 @@ class RemoteControl
      */
     public $undoCommand;
 
-    public function __construct($commandCnt)
+    public function __construct(int $commandCnt)
     {
         for ($i = 0; $i < $commandCnt; $i++) {
             $this->onCommands[] = new NoCommand();
@@ -31,25 +31,25 @@ class RemoteControl
         $this->undoCommand = new NoCommand();
     }
 
-    public function setCommand($slotNum, $onCommand, $offCommand)
+    public function setCommand(int $slotNum, Command $onCommand, Command $offCommand): void
     {
         $this->onCommands[$slotNum] = $onCommand;
         $this->offCommands[$slotNum] = $offCommand;
     }
 
-    public function onButtonWasPushed($slotNum)
+    public function onButtonWasPushed(int $slotNum): void
     {
         $this->onCommands[$slotNum]->execute();
         $this->undoCommand = $this->onCommands[$slotNum];
     }
 
-    public function offButtonWasPushed($slotNum)
+    public function offButtonWasPushed(int $slotNum): void
     {
         $this->offCommands[$slotNum]->execute();
         $this->undoCommand = $this->offCommands[$slotNum];
     }
 
-    public function undoButtonPushed()
+    public function undoButtonPushed(): void
     {
         $this->undoCommand->undo();
     }
