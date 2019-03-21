@@ -2,6 +2,8 @@
 
 namespace HFD\SimpleFactory;
 
+use HFD\SimpleFactory\Pizza\Pizza;
+
 /**
  * Class PizzaStore
  *
@@ -28,9 +30,9 @@ class PizzaStore
      * prepareメソッド,bakeメソッド,...を呼び出せる」ことを知ってるだけで良い。
      *
      * @param string $type
-     * @return object $pizza
+     * @return Pizza $pizza
      */
-    public function orderPizza(string $type): object
+    public function orderPizza(string $type): Pizza
     {
         $pizza = $this->factory->createPizza($type);
         $pizza->prepare();
