@@ -2,6 +2,7 @@
 
 namespace HFD\SimpleFactory;
 
+use HFD\SimpleFactory\Pizza\Pizza;
 use HFD\SimpleFactory\Pizza\CheesePizza;
 use HFD\SimpleFactory\Pizza\ClamPizza;
 use HFD\SimpleFactory\Pizza\VeggiePizza;
@@ -19,9 +20,9 @@ class SimplePizzaFactory
 {
     /**
      * @param string $type
-     * @return object $pizza
+     * @return Pizza $pizza
      */
-    public function createPizza(string $type): object
+    public function createPizza(string $type): Pizza
     {
         //変化する部分（オブジェクト作成）
         $pizza = null;
