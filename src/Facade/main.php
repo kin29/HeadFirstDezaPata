@@ -22,14 +22,14 @@ $theater = new TheaterLights();
 $screen = new Screen();
 $pop = new PopcornPopper();
 $homeTheater = new HomeTheaterFacade(
-	$amp,
-	$tuner,
-	$dvd,
-	$cd,
-	$projecter,
-	$theater,
-	$screen,
-	$pop
+    $amp,
+    $tuner,
+    $dvd,
+    $cd,
+    $projecter,
+    $theater,
+    $screen,
+    $pop
 );
 
 $homeTheater->watchMovie('アナ雪');

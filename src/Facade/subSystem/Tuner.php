@@ -4,35 +4,35 @@ namespace HED\Facade\Sub;
 
 class Tuner
 {
-	public $amp;
+    public $amp;
 
-	public function __constract()
-	{
-	
-	}
+    public function __constract()
+    {
+    
+    }
 
-	public function on()
-	{
+    public function on()
+    {
 
-	}
+    }
 
-	public function off()
-	{
+    public function off()
+    {
 
-	}
+    }
 
-	public function setAm()
-	{
-		
-	}
+    public function setAm()
+    {
+    
+    }
 
-	public function setFm()
-	{
+    public function setFm()
+    {
 
-	}
+    }
 
-	public function setFrequency()
-	{
+    public function setFrequency()
+    {
 
-	}
+    }
 }

@@ -6,48 +6,48 @@ class DvdPlayer
 {
     public $amp;
 
-	public function __constract()
-	{
-	
-	}
+    public function __constract()
+    {
+    
+    }
 
-	public function on()
-	{
+    public function on()
+    {
 
-	}
+    }
 
-	public function off()
-	{
+    public function off()
+    {
 
-	}
+    }
 
-	public function eject()
-	{
-		
-	}
+    public function eject()
+    {
+    
+    }
 
-	public function pause()
-	{
+    public function pause()
+    {
 
-	}
+    }
 
-	public function play()
-	{
+    public function play()
+    {
 
-	}
+    }
 
-	public function setSurroundAudio()
-	{
+    public function setSurroundAudio()
+    {
 
-	}
+    }
 
-	public function setTwoCannelAudio()
-	{
+    public function setTwoCannelAudio()
+    {
 
-	}
+    }
 
-	public function stop()
-	{
+    public function stop()
+    {
 
-	}	
+    }    
 }

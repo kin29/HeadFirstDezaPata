@@ -4,41 +4,41 @@ namespace HED\Facade\Sub;
 
 class CdPlayer
 {
-	public $amp;
+    public $amp;
 
-	public function __constract()
-	{
-	
-	}
+    public function __constract()
+    {
+    
+    }
 
-	public function on()
-	{
+    public function on()
+    {
 
-	}
+    }
 
-	public function off()
-	{
+    public function off()
+    {
 
-	}
+    }
 
-	public function eject()
-	{
+    public function eject()
+    {
 
-	}
+    }
 
-	public function pause()
-	{
+    public function pause()
+    {
 
-	}
+    }
 
-	public function play()
-	{
+    public function play()
+    {
 
-	}
+    }
 
-	public function stop()
-	{
+    public function stop()
+    {
 
-	}
+    }
 
 }
