@@ -7,17 +7,17 @@ use HFD\Adapter\Turkey\Turkey;
 
 class DockAndTurkeyAdapter implements DockAndTurkey
 {
-	/* @var Turkey $turkey */
-	public $turkey;
+    /* @var Turkey $turkey */
+    public $turkey;
 
     /* @var Dock $dock */
     public $dock;
 
-	public function __construct($turkeyOrdock)
-	{
+    public function __construct($turkeyOrdock)
+    {
         if($turkeyOrdock instanceof Turkey)  $this->turkey = $turkeyOrdock;
         if($turkeyOrdock instanceof Dock)  $this->dock = $turkeyOrdock;
-	}
+    }
 
     public function quack(): void
     {
