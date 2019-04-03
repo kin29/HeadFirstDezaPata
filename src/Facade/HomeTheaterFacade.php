@@ -22,7 +22,7 @@ class HomeTheaterFacade
     public $light;
     public $popper;
 
-    public function __constract(
+    public function __construct(
         Amplifier $amp,
         Tuner $tuner,
         DvdPlayer $dvd,

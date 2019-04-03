@@ -6,7 +6,7 @@ class CdPlayer
 {
     public $amp;
 
-    public function __constract()
+    public function __construct()
     {
     
     }

@@ -6,7 +6,7 @@ class Projecter
 {
     public $dvdPlayer;
 
-    public function __constract()
+    public function __construct()
     {
     
     }

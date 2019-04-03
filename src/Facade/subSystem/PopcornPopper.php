@@ -4,7 +4,7 @@ namespace HED\Facade\Sub;
 
 class PopcornPopper
 {
-    public function __constract()
+    public function __construct()
     {
     
     }

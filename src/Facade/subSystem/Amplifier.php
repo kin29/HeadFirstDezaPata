@@ -8,7 +8,7 @@ class Amplifier
     public $dvdPlayer;
     public $cdPlayer;
 
-    public function __constract()
+    public function __construct()
     {
     
     }
