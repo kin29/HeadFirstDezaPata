@@ -1,26 +1,21 @@
 <?php
 
-namespace HED\Facade\Sub;
+namespace HFD\Facade\SubSystem;
 
 class PopcornPopper
 {
-    public function __construct()
-    {
-    
-    }
-
     public function on()
     {
-
+        echo "ボップコーンマシーンをONにします\n";
     }
 
     public function off()
     {
-
+        echo "ボップコーンマシーンをOFFにします\n";
     }
 
     public function pop()
     {
-
+        echo "ボップコーンを作ります\n";
     }
 }

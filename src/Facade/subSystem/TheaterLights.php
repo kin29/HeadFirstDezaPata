@@ -1,26 +1,29 @@
 <?php
 
-namespace HED\Facade\Sub;
+namespace HFD\Facade\SubSystem;
 
 class TheaterLights
 {
     public function __construct()
     {
-    
+
     }
 
     public function on()
     {
-
+        echo "シアターライトをONにします\n";
     }
 
     public function off()
     {
-
+        echo "シアターライトをOFFにします\n";
     }
 
-    public function dim()
+    /**
+     * @param int $level
+     */
+    public function dim(int $level)
     {
-
+        echo "シアターライトを{$level}にします\n";
     }
 }
