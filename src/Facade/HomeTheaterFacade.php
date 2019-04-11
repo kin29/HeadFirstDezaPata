@@ -76,7 +76,6 @@ class HomeTheaterFacade
         $this->dvd->stop();
         $this->dvd->eject();
         $this->dvd->off();
-
     }
 
     public function listenToCd(): void
