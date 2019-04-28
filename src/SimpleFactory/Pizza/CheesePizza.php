@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace HFD\SimpleFactory\Pizza;
 
 /**
@@ -7,13 +9,11 @@ namespace HFD\SimpleFactory\Pizza;
  *
  * 具象製品。
  * 抽象Pizzaクラスを実装する。
- *
- * @package HFD\SimpleFactory\Pizza
  */
 class CheesePizza extends Pizza
 {
     public function __construct()
     {
-        $this->name = "チーズピザ";
+        $this->name = 'チーズピザ';
     }
 }

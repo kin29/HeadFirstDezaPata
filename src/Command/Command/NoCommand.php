@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace HFD\Command\Command;
 
 class NoCommand implements Command

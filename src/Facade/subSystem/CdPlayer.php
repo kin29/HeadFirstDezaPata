@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace HFD\Facade\SubSystem;
 
 use HFD\Facade\SubSystem\Amplifier as Amplifier;
@@ -13,34 +15,33 @@ class CdPlayer
         $this->amp = $amp;
     }
 
-    public function on()
+    public function on(): void
     {
         echo "CDプレーヤーをONにします\n";
     }
 
-    public function off()
+    public function off(): void
     {
         echo "CDプレーヤーをOFFにします\n";
     }
 
-    public function eject()
+    public function eject(): void
     {
         echo "CDを取り除きます\n";
     }
 
-    public function pause()
+    public function pause(): void
     {
         echo "CDを一時停止します\n";
     }
 
-    public function play()
+    public function play(): void
     {
         echo "CDをスタートします\n";
     }
 
-    public function stop()
+    public function stop(): void
     {
         echo "CDをストップします\n";
     }
-
 }

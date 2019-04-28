@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace HFD\AbstractFactory\Ingredient\Veggies;
 
 class MushRoom implements VeggieInterface
@@ -11,7 +13,7 @@ class MushRoom implements VeggieInterface
 
     public function __construct()
     {
-        $this->name = "マッシュルーム";
+        $this->name = 'マッシュルーム';
     }
 
     public function getName(): string

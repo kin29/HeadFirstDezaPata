@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace HFD\Facade\SubSystem;
 
 use HFD\Facade\SubSystem\Amplifier as Amplifier;
@@ -15,51 +17,48 @@ class DvdPlayer
         $this->name = 'DVDプレーヤ';
     }
 
-    public function on()
+    public function __toString(): string
+    {
+        return "{$this->name}";
+    }
+
+    public function on(): void
     {
         echo "DVDプレーヤーをONにします\n";
     }
 
-    public function off()
+    public function off(): void
     {
         echo "DVDプレーヤーをOFFにします\n";
     }
 
-    public function eject()
+    public function eject(): void
     {
         echo "DVDを取り除きます\n";
     }
 
-    public function pause()
+    public function pause(): void
     {
         echo "DVDを一時停止します\n";
     }
 
-    public function play(string $movie)
+    public function play(string $movie): void
     {
         echo "DVD「{$movie}」をスタートします\n";
     }
 
-    public function setSurroundAudio()
+    public function setSurroundAudio(): void
     {
         echo "DVDのサラウンドオーディオをセットします\n";
     }
 
-    public function setTwoChannelAudio()
+    public function setTwoChannelAudio(): void
     {
         echo "DVDの2chオーディオをセットします\n";
     }
 
-    public function stop()
+    public function stop(): void
     {
         echo "DVDをストップします\n";
-    }
-
-    /**
-     * @return string
-     */
-    public function __toString(): string
-    {
-        return "{$this->name}";
     }
 }

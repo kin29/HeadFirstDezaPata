@@ -1,20 +1,20 @@
 <?php
 
+declare(strict_types=1);
+
 namespace HFD\Facade;
 
 use HFD\Facade\SubSystem\Amplifier as Amplifier;
-use HFD\Facade\SubSystem\Tuner as Tuner;
-use HFD\Facade\SubSystem\DvdPlayer as DvdPlayer;
 use HFD\Facade\SubSystem\CdPlayer as CdPlayer;
-use HFD\Facade\SubSystem\Projector as Projector;
-use HFD\Facade\SubSystem\TheaterLights as TheaterLights;
-use HFD\Facade\SubSystem\Screen as Screen;
+use HFD\Facade\SubSystem\DvdPlayer as DvdPlayer;
 use HFD\Facade\SubSystem\PopcornPopper as PopcornPopper;
+use HFD\Facade\SubSystem\Projector as Projector;
+use HFD\Facade\SubSystem\Screen as Screen;
+use HFD\Facade\SubSystem\TheaterLights as TheaterLights;
+use HFD\Facade\SubSystem\Tuner as Tuner;
 
 /**
  * Class HomeTheaterFacade
- *
- * @package HFD
  */
 class HomeTheaterFacade
 {
@@ -36,8 +36,7 @@ class HomeTheaterFacade
         Screen $screen,
         TheaterLights $light,
         PopcornPopper $popper
-    )
-    {
+    ) {
         $this->amp = $amp;
         $this->tuner = $tuner;
         $this->dvd = $dvd;
@@ -80,21 +79,17 @@ class HomeTheaterFacade
 
     public function listenToCd(): void
     {
-        //
     }
 
     public function endCd(): void
     {
-        //
     }
 
     public function listenToRadio(): void
     {
-        //
     }
 
     public function endRadio(): void
     {
-        //
     }
 }

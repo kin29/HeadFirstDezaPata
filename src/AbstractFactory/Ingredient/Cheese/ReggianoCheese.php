@@ -1,17 +1,19 @@
 <?php
 
+declare(strict_types=1);
+
 namespace HFD\AbstractFactory\Ingredient\Cheese;
 
 class ReggianoCheese implements CheeseInterface
 {
     /**
-     * @var string $name
+     * @var string
      */
     private $name;
 
     public function __construct()
     {
-        $this->name = "レジャーノピザ";
+        $this->name = 'レジャーノピザ';
     }
 
     public function getName(): string

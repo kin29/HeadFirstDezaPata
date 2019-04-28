@@ -1,28 +1,26 @@
 <?php
 
+declare(strict_types=1);
+
 namespace HFD\Facade\SubSystem;
 
 class TheaterLights
 {
     public function __construct()
     {
-
     }
 
-    public function on()
+    public function on(): void
     {
         echo "シアターライトをONにします\n";
     }
 
-    public function off()
+    public function off(): void
     {
         echo "シアターライトをOFFにします\n";
     }
 
-    /**
-     * @param int $level
-     */
-    public function dim(int $level)
+    public function dim(int $level): void
     {
         echo "シアターライトを{$level}にします\n";
     }

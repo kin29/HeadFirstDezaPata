@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace HFD\AbstractFactory\Ingredient\Dough;
 
 class ThinCrustDough implements DoughInterface
@@ -11,7 +13,7 @@ class ThinCrustDough implements DoughInterface
 
     public function __construct()
     {
-        $this->name = "うっすい生地";
+        $this->name = 'うっすい生地';
     }
 
     public function getName(): string

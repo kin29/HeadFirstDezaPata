@@ -1,34 +1,36 @@
 <?php
 
+declare(strict_types=1);
+
 namespace HFD\FactoryMethod\Pizza;
 
 class ChicagoCheesePizza extends Pizza
 {
     /**
-     * @var string $name
+     * @var string
      */
     public $name;
 
     /**
-     * @var string $dough
+     * @var string
      */
     public $dough;
 
     /**
-     * @var string $sauce
+     * @var string
      */
     public $sauce;
 
     /**
-     * @var string $name
+     * @var string
      */
     public $toppings;
 
     public function __construct()
     {
-        $this->name = "チーズピザ(シカゴスタイル)";
-        $this->dough = "極厚クラスと生地";
-        $this->sauce = "プラムトマトソース";
+        $this->name = 'チーズピザ(シカゴスタイル)';
+        $this->dough = '極厚クラスと生地';
+        $this->sauce = 'プラムトマトソース';
         $this->toppings = ['モツァレラチーズ', 'はちみつ'];
     }
 

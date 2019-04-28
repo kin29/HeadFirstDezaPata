@@ -1,44 +1,45 @@
 <?php
 
+declare(strict_types=1);
+
 namespace HFD\AbstractFactory\Pizza;
 
-use HFD\AbstractFactory\IngredientFactory\PizzaIngredientFactory;
 use HFD\AbstractFactory\Ingredient\Cheese\CheeseInterface;
 use HFD\AbstractFactory\Ingredient\Clam\ClamInterface;
 use HFD\AbstractFactory\Ingredient\Dough\DoughInterface;
 use HFD\AbstractFactory\Ingredient\Sauce\SauceInterface;
+use HFD\AbstractFactory\IngredientFactory\PizzaIngredientFactory;
 
 abstract class Pizza
 {
     /**
-     * @var $name string
-     */
-    protected $name;
-
-    /**
-     * @var PizzaIngredientFactory $ingredientFactory
+     * @var PizzaIngredientFactory
      */
     public $ingredientFactory;
 
     /**
-     * @var $dough DoughInterface
+     * @var DoughInterface
      */
     public $dough;
 
     /**
-     * @var $sauce SauceInterface
+     * @var SauceInterface
      */
     public $sauce;
 
     /**
-     * @var $cheese CheeseInterface
+     * @var CheeseInterface
      */
     public $cheese;
 
     /**
-     * @var $clam ClamInterface
+     * @var ClamInterface
      */
     public $clam;
+    /**
+     * @var string
+     */
+    protected $name;
 
     abstract public function prepare(): void;
 
@@ -56,5 +57,4 @@ abstract class Pizza
     {
         echo "{$this->name}を箱に入れます\n";
     }
-
 }

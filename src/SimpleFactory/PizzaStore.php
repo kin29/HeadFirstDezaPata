@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace HFD\SimpleFactory;
 
 use HFD\SimpleFactory\Pizza\Pizza;
@@ -9,13 +11,11 @@ use HFD\SimpleFactory\Pizza\Pizza;
  *
  * ファクトリのクライアント
  * SimplePizzaFactoryを介して、ピザをインスタンス取得します
- *
- * @package HFD
  */
 class PizzaStore
 {
     /**
-     * @var SimplePizzaFactory $factory
+     * @var SimplePizzaFactory
      */
     public $factory;
 
@@ -29,7 +29,6 @@ class PizzaStore
      * 「pizzaインターフェースを実装したピザを取得し、
      * prepareメソッド,bakeメソッド,...を呼び出せる」ことを知ってるだけで良い。
      *
-     * @param string $type
      * @return Pizza $pizza
      */
     public function orderPizza(string $type): Pizza

@@ -1,26 +1,28 @@
 <?php
 
+declare(strict_types=1);
+
 namespace HFD\FactoryMethod\Pizza;
 
 abstract class Pizza
 {
     /**
-     * @var $name string
+     * @var string
      */
     public $name;
 
     /**
-     * @var $dough string
+     * @var string
      */
     public $dough;
 
     /**
-     * @var $sauce string
+     * @var string
      */
     public $sauce;
 
     /**
-     * @var $toppings []
+     * @var []
      */
     public $toppings;
 

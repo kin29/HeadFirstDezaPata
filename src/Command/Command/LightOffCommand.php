@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace HFD\Command\Command;
 
 use HFD\Command\Receiver\Light as Light;

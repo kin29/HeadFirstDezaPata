@@ -1,13 +1,13 @@
 <?php
 
+declare(strict_types=1);
+
 namespace HFD\SimpleFactory\Pizza;
 
 /**
  * Interface Pizza
  *
  * SimplePizzaFactoryの製品であるPizzaのスーパークラス
- *
- * @package HFD\SimpleFactory\Pizza
  */
 abstract class Pizza
 {
@@ -36,4 +36,3 @@ abstract class Pizza
         echo "{$this->name}を箱に入れます\n";
     }
 }
-

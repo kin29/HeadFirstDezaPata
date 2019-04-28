@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace HFD\Facade\SubSystem;
 
 use HFD\Facade\SubSystem\DvdPlayer as DvdPlayer;
@@ -13,22 +15,22 @@ class Projector
         $this->dvdPlayer = $dvdPlayer;
     }
 
-    public function on()
+    public function on(): void
     {
         echo "プロジェクターをONにします\n";
     }
 
-    public function off()
+    public function off(): void
     {
         echo "プロジェクターをOFFにします\n";
     }
 
-    public function tvMode()
+    public function tvMode(): void
     {
         echo "プロジェクターをTVモードにします\n";
     }
 
-    public function wideScreenMode()
+    public function wideScreenMode(): void
     {
         echo "プロジェクターをワイドスクリーンモードにします\n";
     }

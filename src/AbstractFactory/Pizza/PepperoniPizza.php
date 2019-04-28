@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace HFD\AbstractFactory\Pizza;
 
 use HFD\AbstractFactory\IngredientFactory\PizzaIngredientFactory;
@@ -8,7 +10,7 @@ class PepperoniPizza extends Pizza
 {
     public function __construct(PizzaIngredientFactory $ingredientFactory)
     {
-        $this->name = "ペペローニピザ";
+        $this->name = 'ペペローニピザ';
         $this->ingredientFactory = $ingredientFactory;
     }
 

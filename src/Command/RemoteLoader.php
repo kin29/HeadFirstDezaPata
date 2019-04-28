@@ -1,12 +1,13 @@
 <?php
 
+declare(strict_types=1);
+
 require __DIR__ . '/../../vendor/autoload.php';
 
-use HFD\Command\Command\LightOnCommand;
 use HFD\Command\Command\LightOffCommand;
+use HFD\Command\Command\LightOnCommand;
 use HFD\Command\Receiver\Light;
 use HFD\Command\RemoteControl;
-
 
 $lightOnCommand = new LightOnCommand(new Light());
 $lightOffCommand = new LightOffCommand(new Light());

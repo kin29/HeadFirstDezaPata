@@ -1,8 +1,11 @@
 <?php
 
+declare(strict_types=1);
+
 require __DIR__ . '/../../vendor/autoload.php';
 
 use HFD\AbstractFactory\PizzaStore\NYPizzaStore;
+
 //use HFD\AbstractFactory\IngredientFactory\NYPizzaIngredientFactory;
 
 /*
@@ -17,7 +20,6 @@ foreach ($veggies as $veggie) {
     echo $veggie->getName() . "\n";
 }
 */
-
 
 $nyStore = new NYPizzaStore();
 $nyStore->orderPizza('チーズ');

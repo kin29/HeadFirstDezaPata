@@ -1,19 +1,19 @@
 <?php
 
+declare(strict_types=1);
+
 namespace HFD\AbstractFactory\PizzaStore;
 
 use HFD\AbstractFactory\IngredientFactory\NYPizzaIngredientFactory;
 use HFD\AbstractFactory\Pizza\CheesePizza;
 use HFD\AbstractFactory\Pizza\ClamPizza;
 use HFD\AbstractFactory\Pizza\PepperoniPizza;
-use HFD\AbstractFactory\Pizza\VeggiePizza;
 use HFD\AbstractFactory\Pizza\Pizza;
-
+use HFD\AbstractFactory\Pizza\VeggiePizza;
 
 class NYPizzaStore extends PizzaStore
 {
     /**
-     * @param string $item
      * @return Pizza $pizza
      */
     public function createPizza(string $item): Pizza
@@ -22,25 +22,30 @@ class NYPizzaStore extends PizzaStore
         $ingredientFactory = new NYPizzaIngredientFactory();
 
         switch ($item) {
-            case "チーズ":
+            case 'チーズ':
                 $pizza = new CheesePizza($ingredientFactory);
+
                 break;
 
-            case "クラム":
+            case 'クラム':
                 $pizza = new ClamPizza($ingredientFactory);
+
                 break;
 
-            case "野菜":
+            case '野菜':
                 $pizza = new VeggiePizza($ingredientFactory);
+
                 break;
 
-            case "ペペロニ":
+            case 'ペペロニ':
                 $pizza = new PepperoniPizza($ingredientFactory);
+
                 break;
 
             default:
                 break;
         }
+
         return $pizza;
     }
 }

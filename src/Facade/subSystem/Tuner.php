@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace HFD\Facade\SubSystem;
 
 use HFD\Facade\SubSystem\Amplifier as Amplifier;
@@ -13,27 +15,27 @@ class Tuner
         $this->amp = $amp;
     }
 
-    public function on()
+    public function on(): void
     {
         echo "チューナーをONにします\n";
     }
 
-    public function off()
+    public function off(): void
     {
         echo "チューナーをOFFにします\n";
     }
 
-    public function setAm()
+    public function setAm(): void
     {
         echo "AMラジオをセットします\n";
     }
 
-    public function setFm()
+    public function setFm(): void
     {
         echo "FMラジオをセットします\n";
     }
 
-    public function setFrequency()
+    public function setFrequency(): void
     {
         echo "周波数をセットします\n";
     }

@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace HFD\AbstractFactory\Ingredient\Veggies;
 
 class RedPepper implements VeggieInterface
@@ -11,7 +13,7 @@ class RedPepper implements VeggieInterface
 
     public function __construct()
     {
-        $this->name = "レッドペッパー";
+        $this->name = 'レッドペッパー';
     }
 
     public function getName(): string

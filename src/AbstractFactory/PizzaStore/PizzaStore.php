@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace HFD\AbstractFactory\PizzaStore;
 
 use HFD\AbstractFactory\Pizza\Pizza;
@@ -9,15 +11,12 @@ use HFD\AbstractFactory\Pizza\Pizza;
  *
  * 地域スタイル用のPizzaStoreサブクラスの抽象クラス
  * ピザの作成方法(createPizzaメソッド)はサブクラスに任せる
- *
- * @package HFD\FactoryMethod
  */
 abstract class PizzaStore
 {
     /**
      * この部分はどんなサブクラスでも一貫性を保証したい。（変化しない部分）
      *
-     * @param string $item
      * @return Pizza $pizza
      */
     public function orderPizza(string $item): Pizza
@@ -35,8 +34,7 @@ abstract class PizzaStore
      * ピザの作成方法(createPizzaメソッド)はサブクラスに任せる（変化する部分）
      * ＝FactoryMethod
      *
-     * @param string $item
      * @return Pizza $pizza
      */
-    public abstract function createPizza(string $item): Pizza;
+    abstract public function createPizza(string $item): Pizza;
 }

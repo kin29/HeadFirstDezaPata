@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace HFD\AbstractFactory\Ingredient\Veggies;
 
 class Onion implements VeggieInterface
@@ -11,7 +13,7 @@ class Onion implements VeggieInterface
 
     public function __construct()
     {
-        $this->name = "オニオン";
+        $this->name = 'オニオン';
     }
 
     public function getName(): string
