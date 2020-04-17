@@ -4,7 +4,7 @@
 namespace HFD\Strategy;
 
 
-interface Quackable
+interface QuackBehavior
 {
     public function quack();
 }

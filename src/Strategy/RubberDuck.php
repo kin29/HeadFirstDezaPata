@@ -8,7 +8,7 @@ namespace HFD\Strategy;
  * Class RubberDuck
  * @package HFD\Strategy
  */
-class RubberDuck extends Duck implements Quackable
+class RubberDuck extends Duck
 {
     public function quack()
     {

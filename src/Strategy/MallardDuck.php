@@ -8,20 +8,10 @@ namespace HFD\Strategy;
  * Class MallardDuck
  * @package HFD\Strategy
  */
-class MallardDuck extends Duck implements Flyable,Quackable
+class MallardDuck extends Duck
 {
     public function display()
     {
         //マガモ(mallard)の表示
-    }
-
-    public function fly()
-    {
-        //
-    }
-
-    public function quack()
-    {
-        //
     }
 }

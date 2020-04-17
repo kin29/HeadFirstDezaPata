@@ -8,20 +8,10 @@ namespace HFD\Strategy;
  * Class RedheadDuck
  * @package HFD\Strategy
  */
-class RedheadDuck extends Duck implements Flyable,Quackable
+class RedheadDuck extends Duck
 {
     public function display()
     {
         //アメリカホシハジロ(readhead)の表示
-    }
-
-    public function fly()
-    {
-
-    }
-
-    public function quack()
-    {
-        //
     }
 }

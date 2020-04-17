@@ -4,7 +4,7 @@
 namespace HFD\Strategy;
 
 
-interface Flyable
+interface FlyBehavior
 {
     public function fly();
 }
