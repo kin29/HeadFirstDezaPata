@@ -15,14 +15,4 @@ abstract class Duck
     {
 
     }
-
-    public function quack()
-    {
-
-    }
-
-    public function fly()
-    {
-
-    }
 }
