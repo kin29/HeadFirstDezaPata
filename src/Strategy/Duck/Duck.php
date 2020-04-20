@@ -1,8 +1,11 @@
 <?php
 
 
-namespace HFD\Strategy;
+namespace HFD\Strategy\Duck;
 
+
+use HFD\Strategy\Behavior\FlyBehavior;
+use HFD\Strategy\Behavior\QuackBehavior;
 
 abstract class Duck
 {

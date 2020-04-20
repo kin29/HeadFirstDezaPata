@@ -1,13 +1,13 @@
 <?php
 
 
-namespace HFD\Strategy;
+namespace HFD\Strategy\Behavior;
 
 
 class Quack implements QuackBehavior
 {
     public function quack()
     {
-        // 鴨の鳴く振る舞いを実装
+        echo "鴨の鳴く振る舞いを実装\n";
     }
 }

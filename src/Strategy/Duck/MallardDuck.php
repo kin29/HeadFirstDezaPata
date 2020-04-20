@@ -1,7 +1,7 @@
 <?php
 
 
-namespace HFD\Strategy;
+namespace HFD\Strategy\Duck;
 
 /**
  * マガモ
@@ -12,6 +12,6 @@ class MallardDuck extends Duck
 {
     public function display()
     {
-        //マガモ(mallard)の表示
+        echo "マガモ(mallard)の表示\n";
     }
 }

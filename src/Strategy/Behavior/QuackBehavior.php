@@ -1,7 +1,7 @@
 <?php
 
 
-namespace HFD\Strategy;
+namespace HFD\Strategy\Behavior;
 
 
 interface QuackBehavior

@@ -1,14 +1,13 @@
 <?php
 
 
-namespace HFD\Strategy;
+namespace HFD\Strategy\Behavior;
 
 
 class MuteQuack implements QuackBehavior
 {
     public function quack()
     {
-        // 何もしない
-        // 鳴けない！
+        echo "何もしない。鳴けない！\n";
     }
 }

@@ -1,7 +1,7 @@
 <?php
 
 
-namespace HFD\Strategy;
+namespace HFD\Strategy\Duck;
 
 /**
  * アメリカホシハジロ
@@ -12,6 +12,6 @@ class RedheadDuck extends Duck
 {
     public function display()
     {
-        //アメリカホシハジロ(readhead)の表示
+        echo "アメリカホシハジロ(readhead)の表示\n";
     }
 }

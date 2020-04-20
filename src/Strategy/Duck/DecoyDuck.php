@@ -1,7 +1,7 @@
 <?php
 
 
-namespace HFD\Strategy;
+namespace HFD\Strategy\Duck;
 
 /**
  * おとりの鴨
@@ -12,6 +12,6 @@ class DecoyDuck extends Duck
 {
     public function display()
     {
-        //おとりの鴨の表示
+        echo "おとりの鴨の表示\n";
     }
 }

@@ -1,14 +1,13 @@
 <?php
 
 
-namespace HFD\Strategy;
+namespace HFD\Strategy\Behavior;
 
 
 class FlyNoWay implements FlyBehavior
 {
     public function fly()
     {
-        // 何もしない
-        // 飛べない！
+        echo "何もしない。飛べない！\n";
     }
 }

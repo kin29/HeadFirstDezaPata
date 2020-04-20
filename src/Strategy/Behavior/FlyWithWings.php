@@ -1,13 +1,13 @@
 <?php
 
 
-namespace HFD\Strategy;
+namespace HFD\Strategy\Behavior;
 
 
 class FlyWithWings implements FlyBehavior
 {
     public function fly()
     {
-        // カモの飛ぶ振る舞いを実装する
+        echo "カモの飛ぶ振る舞いを実装する\n";
     }
 }

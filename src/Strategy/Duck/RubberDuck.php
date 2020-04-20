@@ -1,7 +1,7 @@
 <?php
 
 
-namespace HFD\Strategy;
+namespace HFD\Strategy\Duck;
 
 /**
  * ゴム製の鴨
@@ -12,11 +12,11 @@ class RubberDuck extends Duck
 {
     public function quack()
     {
-        //キューという音を出す
+        echo "キューという音を出す\n";
     }
 
     public function display()
     {
-        //ゴム製の鴨の表示
+        echo "ゴム製の鴨の表示\n";
     }
 }
