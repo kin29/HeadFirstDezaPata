@@ -11,5 +11,6 @@
 - [Facade](https://github.com/kin29/HeadFirstDezaPata/tree/master/src/Facade)
 - [FactoryMethod](https://github.com/kin29/HeadFirstDezaPata/tree/master/src/FactoryMethod)
 - [SimpleFactory](https://github.com/kin29/HeadFirstDezaPata/tree/master/src/SimpleFactory)
+- [Strategy](https://github.com/kin29/HeadFirstDezaPata/tree/master/src/Strategy)
 - [TemplateMethod](https://github.com/kin29/HeadFirstDezaPata/tree/master/src/TemplateMethod)
 
