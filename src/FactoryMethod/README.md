@@ -5,10 +5,10 @@ Pizzaオブジェクトを作成する具体的な方法は全く知りません
 createPizzaメソッドを使えばPizzaオブジェクトを作成できることを知っています。  
 →orderPizzaメソッド内でcreatePizzaを使用して実装している。  
 
-- NYPizzaStore(PizzaStoreのサブクラス)  
+    └ NYPizzaStore(PizzaStoreのサブクラス)  
 具象Pizza(NYスタイル)オブジェクトを作成する  
 
-- ChicagoPizzaStore(PizzaStoreのサブクラス)  
+    └ ChicagoPizzaStore(PizzaStoreのサブクラス)  
 具象Pizza(Chicagoスタイル)オブジェクトを作成する  
 
 - Pizza   
