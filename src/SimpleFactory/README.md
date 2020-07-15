@@ -10,11 +10,13 @@ SimplePizzaFactoryを介して、ピザインスタンスを取得する。
 
 - Pizza   
 抽象Pizzaクラス
+└ CheesePizza　具象Pizza
 
-    └ CheesePizza　具象Pizza  
-    └ ClamPizza 具象Pizza 
-    └ PepperoniPizza 具象Pizza 
-    └ VeggiePizza 具象Pizza 
+└ ClamPizza 具象Pizza
+
+└ PepperoniPizza 具象Pizza
+
+└ VeggiePizza 具象Pizza 
 
   
 ![class_uml](../../img/simpleFactory.png)
