@@ -28,7 +28,7 @@ abstract class Pizza
 
     public function prepare(): void
     {
-        echo "{$this->name}を準備します\n";
+        echo "● {$this->name}を準備します\n";
         echo "生地をこねる...\n";
         echo "ソースを追加...\n";
         echo "トッピングを追加...\n";

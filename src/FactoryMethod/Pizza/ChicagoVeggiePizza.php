@@ -22,7 +22,7 @@ class ChicagoVeggiePizza extends Pizza
     public $sauce;
 
     /**
-     * @var string
+     * @var []
      */
     public $toppings;
 

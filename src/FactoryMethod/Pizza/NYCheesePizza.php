@@ -22,7 +22,7 @@ class NYCheesePizza extends Pizza
     public $sauce;
 
     /**
-     * @var string
+     * @var []
      */
     public $toppings;
 
