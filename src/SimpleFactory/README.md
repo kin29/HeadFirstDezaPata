@@ -10,6 +10,7 @@ SimplePizzaFactoryを介して、ピザインスタンスを取得する。
 
 - Pizza   
 抽象Pizzaクラス
+
 └ CheesePizza　具象Pizza
 
 └ ClamPizza 具象Pizza
