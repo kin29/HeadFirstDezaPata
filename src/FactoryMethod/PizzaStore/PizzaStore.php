@@ -4,6 +4,8 @@ declare(strict_types=1);
 
 namespace HFD\FactoryMethod\PizzaStore;
 
+use HFD\FactoryMethod\Pizza\Pizza;
+
 /**
  * Class PizzaStore
  *
@@ -15,7 +17,7 @@ abstract class PizzaStore
     /**
      * この部分はどんなサブクラスでも一貫性を保証したい。（変化しない部分）
      */
-    public function orderPizza(string $type): object
+    public function orderPizza(string $type): Pizza
     {
         $pizza = $this->createPizza($type);
         $pizza->prepare();
@@ -29,5 +31,5 @@ abstract class PizzaStore
     /**
      * ピザの作成方法(createPizzaメソッド)はサブクラスに任せる（変化する部分）
      */
-    abstract public function createPizza(string $type): object;
+    abstract public function createPizza(string $type): ?Pizza;
 }
