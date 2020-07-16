@@ -14,9 +14,9 @@ use HFD\AbstractFactory\Pizza\VeggiePizza;
 class NYPizzaStore extends PizzaStore
 {
     /**
-     * @return Pizza $pizza
+     * @return Pizza|null $pizza
      */
-    public function createPizza(string $item): Pizza
+    public function createPizza(string $item): ?Pizza
     {
         $pizza = null;
         $ingredientFactory = new NYPizzaIngredientFactory();

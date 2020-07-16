@@ -34,7 +34,7 @@ abstract class PizzaStore
      * ピザの作成方法(createPizzaメソッド)はサブクラスに任せる（変化する部分）
      * ＝FactoryMethod
      *
-     * @return Pizza $pizza
+     * @return Pizza|null $pizza
      */
-    abstract public function createPizza(string $item): Pizza;
+    abstract public function createPizza(string $item): ?Pizza;
 }

@@ -8,10 +8,11 @@ use HFD\FactoryMethod\Pizza\NYCheesePizza;
 use HFD\FactoryMethod\Pizza\NYClamPizza;
 use HFD\FactoryMethod\Pizza\NYPepperoniPizza;
 use HFD\FactoryMethod\Pizza\NYVeggiePizza;
+use HFD\FactoryMethod\Pizza\Pizza;
 
 class NYPizzaStore extends PizzaStore
 {
-    public function createPizza(string $type): object
+    public function createPizza(string $type): ?Pizza
     {
         //変化する部分（オブジェクト作成）
         $pizza = null;
