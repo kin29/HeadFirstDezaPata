@@ -17,7 +17,7 @@ use HFD\Command\RemoteControl;
 $light = new Light();
 $lightOnCommand = new LightOnCommand($light);
 $lightOffCommand = new LightOffCommand($light);
-$remCon = new RemoteControl(2);
+$remCon = new RemoteControl(6); //0~5までの6個のコマンドが設定可能
 $remCon->setCommand(0, $lightOnCommand, $lightOffCommand);
 
 $remCon->onButtonWasPushed(0);
@@ -48,3 +48,9 @@ $remCon->onButtonWasPushed(3);
 $remCon->offButtonWasPushed(3);
 $remCon->undoButtonPushed();
 echo "---マクロコマンド end---\n";
+
+//NoCommand(Null Object)
+$remCon->onButtonWasPushed(4);
+$remCon->offButtonWasPushed(4);
+$remCon->onButtonWasPushed(5);
+$remCon->offButtonWasPushed(5);

@@ -8,11 +8,11 @@ class NoCommand implements Command
 {
     public function execute(): void
     {
-        //何もしない
+        echo "何もしません\n";
     }
 
     public function undo(): void
     {
-        //何もしない
+        echo "何もしません\n";
     }
 }
