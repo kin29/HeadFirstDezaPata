@@ -6,10 +6,6 @@ namespace HFD\Facade\SubSystem;
 
 class TheaterLights
 {
-    public function __construct()
-    {
-    }
-
     public function on(): void
     {
         echo "シアターライトをONにします\n";

@@ -6,10 +6,6 @@ namespace HFD\Facade\SubSystem;
 
 class Screen
 {
-    public function __construct()
-    {
-    }
-
     public function up(): void
     {
         echo "スクリーンを上げてしまいます\n";
