@@ -17,15 +17,15 @@ templateMethod
 
 ## Concrete Example
 - CaffeineBeverage [AbstractClass]  
-...アルゴリズムのテンプートとなるメソッドを定義する。(関数：prepareRecipe)  
-関数prepareRecipe内で、boilWater,brew,pourInCup,addCondimentsを使ってる。  
+...アルゴリズムのテンプートとなるメソッドを定義する。(関数：prepareRecipe[テンプレートメソッド])  
+関数prepareRecipe内で、boilWater,brew,pourInCup,addCondimentsを呼び出し、手順を制御している。  
 boilWater,pourInCupは共通なのでここで実装する。  
-brew,addCondimentsはCoffeeはサブクラスに実装を見送る。  
+brew,addCondimentsはサブクラスに実装を見送る。  
 
 - Coffee [ConcreteClass]  
-brew,addCondimentsはCoffeeで実装する。  
+brew,addCondimentsを実装する。  
   
 - Tea [ConcreteClass]  
-brew,addCondimentsはTeaで実装する。  
+brew,addCondimentsを実装する。  
 
 ![class_uml](../../img/ConcreteTemplateMethod.png)
