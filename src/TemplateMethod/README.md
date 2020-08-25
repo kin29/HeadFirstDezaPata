@@ -1,14 +1,16 @@
 # TemplateMethod
 
-メソッドにおけるアルゴリズムの骨組みを定義し、  
-いくつかの手順をサブクラスに先送りする。  
+メソッドにおけるアルゴリズムの手順(骨組み)を定義し、  
+1つ以上の手順を抽象メソッドとして定義し、サブクラスがそれを実装する。  
+アルゴリズムの手順と実際の実装は分離される。
 
 - AbstractClass
 templateMethod   
 ...アルゴリズムのテンプートとなるメソッドを定義する。(関数：templateMethod)  
   
 - ConcreteClass  
-関数templateMethodで使われるメソッドでサブクラスに先送られたメソッドに関して実装する。  
+AbstractClassを継承する。  
+関数templateMethod内で使われるサブクラスに先送られたメソッドに関して実装する。  
 
 
 ![class_uml](../../img/TemplateMethod.png)
@@ -23,9 +25,9 @@ boilWater,pourInCupは共通なのでここで実装する。
 brew,addCondimentsはサブクラスに実装を見送る。  
 
 - Coffee [ConcreteClass]  
-brew,addCondimentsを実装する。  
+CaffeineBeverageを継承し、brew,addCondimentsを実装する。
   
 - Tea [ConcreteClass]  
-brew,addCondimentsを実装する。  
+CaffeineBeverageを継承し、brew,addCondimentsを実装する。
 
 ![class_uml](../../img/ConcreteTemplateMethod.png)
