@@ -11,7 +11,9 @@ abstract class CaffeineBeverage
         $this->boilWater();
         $this->brew();
         $this->pourInCup();
-        $this->addCondiments();
+        if ($this->customerWantsCondiments()) {
+            $this->addCondiments();
+        }
     }
 
     abstract public function brew(): void;
@@ -26,5 +28,11 @@ abstract class CaffeineBeverage
     public function pourInCup(): void
     {
         echo "カップに注ぎます\n";
+    }
+
+    //フック
+    public function customerWantsCondiments(): bool
+    {
+        return true;
     }
 }
