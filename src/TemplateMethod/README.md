@@ -31,3 +31,8 @@ CaffeineBeverageを継承し、brew,addCondimentsを実装する。
 CaffeineBeverageを継承し、brew,addCondimentsを実装する。
 
 ![class_uml](../../img/ConcreteTemplateMethod.png)
+
+## ※カプセル化をするパターン
+- TemplateMethod ...継承を使う
+- [Strategy](../Strategy/README.md) ...コンポジションを使う
+- [FactoryMethod](../FactoryMethod/README.md) ...TemplateMethodを特化したパターン
