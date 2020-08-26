@@ -7,7 +7,7 @@ class Waitress
     private $pancakeMenu;
     private $dinnerMenu;
 
-    public function __construct(PancakeMenu $pancakeMenu, DinnerMenu $dinnerMenu)
+    public function __construct(Menu $pancakeMenu, Menu $dinnerMenu)
     {
         $this->pancakeMenu = $pancakeMenu;
         $this->dinnerMenu = $dinnerMenu;
@@ -15,16 +15,19 @@ class Waitress
 
     public function printMenu()
     {
-        echo "●パンケーキメニュー\n";
-        $pancakeMenus = $this->dinnerMenu->getMenuItems();
-        for ($i = 0; $i < count($pancakeMenus); $i++) {
-            echo $pancakeMenus[$i]. "\n";
-        }
-
         echo "●ディナーメニュー\n";
-        $dinnerMenus = explode('\n', $this->pancakeMenu->getMenuItems());
-        for ($i = 0; $i < count($dinnerMenus); $i++) {
-            echo $dinnerMenus[$i];
+        $dinnerMenuIterator = $this->dinnerMenu->createIterator();
+        $this->printMenuItem($dinnerMenuIterator);
+
+        echo "●パンケーキメニュー\n";
+        $pancakeMenuIterator = $this->pancakeMenu->createIterator();
+        $this->printMenuItem($pancakeMenuIterator);
+    }
+
+    private function printMenuItem(MenuIterator $menuIterator): void
+    {
+        while ($menuIterator->hasNext()) {
+            echo $menuIterator->next(). "\n";
         }
     }
 }

@@ -24,8 +24,8 @@ class DinnerMenu implements Menu
         $this->numberOfItems++;
     }
 
-    public function getMenuItems(): array
+    public function createIterator(): MenuIterator
     {
-        return $this->menuItems;
+        return new DinnerMenuIterator($this->menuItems);
     }
 }

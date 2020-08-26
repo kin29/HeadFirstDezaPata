@@ -22,8 +22,8 @@ class PancakeMenu implements Menu
         $this->menuItems .= "$menuItem\n";
     }
 
-    public function getMenuItems(): string
+    public function createIterator(): MenuIterator
     {
-        return $this->menuItems;
+        return new PancakeMenuIterator($this->menuItems);
     }
 }
