@@ -20,4 +20,10 @@ class Tea extends CaffeineBeverage
     {
         echo "レモンを追加します\n";
     }
+
+    //フック
+    public function customerWantsCondiments(): bool
+    {
+        return false;
+    }
 }
