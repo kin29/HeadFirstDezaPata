@@ -1,8 +1,8 @@
 <?php
 
+namespace HFD\Iterator\Iterator;
 
-namespace HFD\Iterator;
-
+use HFD\Iterator\MenuItem;
 
 class DinnerMenuIterator implements MenuIterator
 {
@@ -25,7 +25,7 @@ class DinnerMenuIterator implements MenuIterator
         return true;
     }
 
-    public function next(): MenuItem
+    public function next(): \HFD\Iterator\MenuItem
     {
         $menuItem = $this->items[self::$position];
         self::$position++;

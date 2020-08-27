@@ -1,6 +1,8 @@
 <?php
 
-namespace HFD\Iterator;
+namespace HFD\Iterator\Aggregate;
+
+use HFD\Iterator\Iterator\MenuIterator;
 
 interface Menu
 {

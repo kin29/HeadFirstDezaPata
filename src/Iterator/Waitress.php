@@ -2,6 +2,9 @@
 
 namespace HFD\Iterator;
 
+use HFD\Iterator\Aggregate\Menu;
+use HFD\Iterator\Iterator\MenuIterator;
+
 class Waitress
 {
     private $pancakeMenu;

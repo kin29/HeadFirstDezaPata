@@ -1,8 +1,6 @@
 <?php
 
-
-namespace HFD\Iterator;
-
+namespace HFD\Iterator\Iterator;
 
 class PancakeMenuIterator implements MenuIterator
 {

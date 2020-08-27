@@ -1,6 +1,10 @@
 <?php
 
-namespace HFD\Iterator;
+namespace HFD\Iterator\Aggregate;
+
+use HFD\Iterator\Iterator\DinnerMenuIterator;
+use HFD\Iterator\Iterator\MenuIterator;
+use HFD\Iterator\MenuItem;
 
 class DinnerMenu implements Menu
 {

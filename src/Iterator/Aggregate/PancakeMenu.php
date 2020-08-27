@@ -1,6 +1,10 @@
 <?php
 
-namespace HFD\Iterator;
+namespace HFD\Iterator\Aggregate;
+
+use HFD\Iterator\Iterator\MenuIterator;
+use HFD\Iterator\Iterator\PancakeMenuIterator;
+use HFD\Iterator\MenuItem;
 
 class PancakeMenu implements Menu
 {
